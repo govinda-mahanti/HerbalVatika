@@ -1,0 +1,111 @@
+.homePage{
+    margin-top: 70px;
+    width: 100%;
+    height: 100%;
+    background-color: #192116;
+
+}
+
+.tModel{
+    height: 90vh;
+    background-color: azure;
+}
+
+.vrSection{
+    background-color: #03322077;
+    height: 400px;
+    display: flex;
+}
+.vrInfo{
+    padding: 100px 0px 0px 100px;
+    width: 50%;
+    color: white;
+}
+.vrInfo>p{
+    font-size: 20px;
+}
+.vrInfo>button{
+    margin-top: 20px;
+    padding: 10px 20px;
+}
+.vrImage{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.topSearch{
+    position: relative;
+    overflow: hidden;
+}
+.tSpara{
+   font-size: 40px;
+   font-weight: 800;
+   text-align: center;
+   color: beige;
+   background: transparent;
+}
+.tSpara>p{
+    text-align: justify;
+}
+.topSearch>img{
+    position: absolute;
+    width: 100%;
+}
+.tSCards{
+    padding: 50px 90px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 100px;
+    grid-row-gap: 60px;
+    height: 800px;
+}
+.tSCards>div{
+    border: 2px solid black ;
+    border-radius: 40px;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0px 8px 32px 0px rgba(0, 0, 0, 0.37);
+    background: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.tSCards>div>img{
+    height: 200px;
+    background: transparent;
+}
+.tSCards>div>p{
+    color: beige;
+    font-size: 30px;
+}
+.tSCards>div>button{
+    background: transparent;
+    color: rgb(255, 255, 255);
+    border: none;
+    margin-top: 5px;
+}
+.tSCards>div>button:hover{
+    background-color: green;
+}
+.div1 { 
+    grid-area: 1 / 1 / 2 / 2;
+}
+.div2 { 
+    grid-area: 1 / 2 / 2 / 3; 
+}
+.div3 { 
+    grid-area: 1 / 3 / 2 / 4; 
+}
+.div4 { 
+    grid-area: 2 / 1 / 3 / 2; 
+}
+.div5 { 
+    grid-area: 2 / 2 / 3 / 3; 
+}
+.div6 { 
+    grid-area: 2 / 3 / 3 / 4; 
+}

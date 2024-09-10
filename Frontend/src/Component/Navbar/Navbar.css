@@ -1,0 +1,120 @@
+.nav{
+    height:70px;
+    position: static;
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    color: #C7C5C7;
+    background-color: #192116;
+    z-index: 10;
+
+}
+.navbarName{
+    color: #C7C5C7;
+    padding:10px 20px 10px 20px;
+}
+.logo{
+    width: 33.33%;
+    color: #C7C5C7;
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+}
+.space{
+    width:33.34%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 32px;
+}
+
+.options{
+    display: block;
+    position: relative;
+    cursor: pointer;
+    color: #C7C5C7;
+    font-weight: 600;
+    background: none;
+    text-decoration: none; 
+ }
+ .options:focus, .options:active {
+    outline: none;
+    box-shadow: none;
+    background: none;
+  }
+  .space>a{
+    background: none;
+  } 
+ 
+ .options:before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 3px;
+    background-color: #099b3c;
+    transition: width 1s;
+ }
+ .options:hover:before{
+    width: 100%;
+ }
+.btn{
+    width: 33.33%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding-right: 20px;
+
+}
+         
+.btn>button {
+    margin:10px;
+    padding: 3px 10px;
+    text-align: center;
+    color: white;            
+    display: block;
+    font-size: 12px;
+    border: none;
+    background: transparent;
+  }
+
+  .btn>button:hover {
+    background-position: right center; /* change the direction of the change here */
+    color: #fff;
+    text-decoration: none;
+  }
+  .profilePic {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 13px;
+    margin-right: 13px;
+
+  }
+  .profilePic>a{
+    text-decoration: none;
+    display: flex;
+    border-radius: 50%;
+  }
+
+  .profile-pic {
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    object-fit: cover;
+    text-decoration: none;
+    border-top: 2px solid #545454;
+    border-left: 2px solid #545454;
+
+    border-bottom: 2px solid rgb(0, 0, 0);
+    border-right: 2px solid rgb(0, 0, 0);
+
+  }
+  .profilePic:hover{
+    transition: 2s;
+    transform: rotateY(360deg);
+  }
