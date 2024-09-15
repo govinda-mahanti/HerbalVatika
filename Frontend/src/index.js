@@ -6,6 +6,7 @@ import reportWebVitals from './reportWebVitals';
 import { createBrowserRouter, RouterProvider, Outlet } from 'react-router-dom';
 import Plants from './Component/Plants/Plants';
 import Layout from './Layout';
+import Garden from './Component/Garden/Garden';
 
 const router = createBrowserRouter([
   {
@@ -19,7 +20,11 @@ const router = createBrowserRouter([
       {
         path: "plants",
         element: <Plants />,
+      },{
+        path: "garden",
+        element: <Garden />,
       },
+
       // Add more pages here if needed
     ],
   },

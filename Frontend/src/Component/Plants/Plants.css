@@ -32,3 +32,19 @@
 .plantInfo>p>span{
     font-weight: 700;
 }
+.plantModels{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    height: 400px;
+    width: 600px;
+}
+.arButton{
+    margin-bottom: 40px;
+}
+.arButton>button{
+    padding: 20px 80px;
+    font-size: 20px;
+    font-weight: 600;
+    border-radius: 50px;
+    background-color: greenyellow;
+}

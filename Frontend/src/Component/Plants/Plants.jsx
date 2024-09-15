@@ -48,11 +48,14 @@ const Plants = () => {
         </p>
       </div>
       </div>
-      <div className="plantModela">
+      <div className="plantModels">
       <Canvas shadows camera={{ position: [0, 0, 5], fov: 30 }}>
                 <color attach="background" args={["#232323"]} />
                 <Experience />
               </Canvas>
+      </div>
+      <div className="arButton">
+        <button>View in AR</button>
       </div>
 
     </div>

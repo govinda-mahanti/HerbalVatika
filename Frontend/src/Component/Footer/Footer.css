@@ -41,6 +41,7 @@
     text-decoration: none;
     font-weight: 600;
     font-size: 15px;
+    color: beige;
 }
 .footerDetails>div>a:hover{
     font-size: 17px;
@@ -49,7 +50,7 @@
 .vertical{
     width: 4px;
     height: 196px;
-    background-image: linear-gradient(#3a3647, #A69CD0, #3a3647);
+    background-image: linear-gradient(#364737, #4b835c,#364737);
 }
 
 .footerSocial{
@@ -61,7 +62,7 @@
     line-height: normal;
 }
 .footerSocial>p{
-    color: #0B0715;
+    color:beige;
     font-size: 17px;
     font-weight: 600;
 }
@@ -83,7 +84,7 @@
 .socialMediaSite{
     width: 35px;
     height: 35px;
-    background-color: #d99ffb;
+    background-color: beige;
     border-radius: 90px;
     display: flex;
     align-items: center;
@@ -105,7 +106,7 @@
 .horizontal{
     width: 90%;
     height: 5px;
-    background-image: linear-gradient(to right, #3a3647,#A69CD0,#3a3647);
+    background-image: linear-gradient(to right, #364737, #4b835c,#364737);
     margin: auto;
 }
 .copyR{

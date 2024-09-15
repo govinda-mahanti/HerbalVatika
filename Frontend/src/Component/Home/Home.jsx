@@ -1,36 +1,34 @@
 import React from "react";
 import "./Home.css";
-import { Canvas } from "@react-three/fiber";
-import { Experience } from "./Experience";
 import { useNavigate } from "react-router-dom";
 
 const Home = () => {
   const navigate = useNavigate();
   return (
     <div className="homePage">
-      <div className="tModel">
-
-      <Canvas shadows camera={{ position: [0, 0, 5], fov: 30 }}>
-                <color attach="background" args={["#232323"]} />
-                <Experience />
-              </Canvas>
+      <div className="banner">
+        <div className="heading">
+          <div className="hedleft">
+            
+          </div>
+          <div className="hedright">
+          </div>
+        </div>
       </div>
-
-
+      
 
       <div className="vrSection">
         <div className="vrInfo">
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda
-            et laborum maiores nesciunt praesentium, explicabo magnam iusto
-            cumque illo eius blanditiis id. Labore quaerat ut iste, ullam
-            voluptates ratione minima.
+            Explore Ayurvedic plants in our immersive 3D virtual garden. Learn
+            about the healing properties of herbs while interacting with a
+            peaceful, nature-inspired environment. Experience Ayurveda like
+            never before, combining wellness and technology.
           </p>
           <button>Get App</button>
         </div>
         <div className="vrImage">
-        <img src="./assets/vr.png" alt="" />
-
+          <img src="./assets/vr.png" alt="" />
         </div>
       </div>
 
@@ -41,10 +39,13 @@ const Home = () => {
           <div className="tSDiv1">
             <img src="./assets/Aloevera.png" alt="" />
             <p>Aloevera</p>
-            <button onClick={() => {
-              navigate("/plants");
-
-            }}>More info..</button>
+            <button
+              onClick={() => {
+                navigate("/plants");
+              }}
+            >
+              More info..
+            </button>
           </div>
           <div className="tSDiv2">
             <img src="./assets/Ashwagandha.png" alt="" />

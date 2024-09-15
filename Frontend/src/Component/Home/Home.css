@@ -6,9 +6,13 @@
 
 }
 
-.tModel{
-    height: 90vh;
-    background-color: azure;
+.banner{
+    height: 2000px;
+    background-image: url("../../../public/assets/treebg.png");
+    background-size: cover; 
+    background-position: center;
+
+
 }
 
 .vrSection{
@@ -27,6 +31,10 @@
 .vrInfo>button{
     margin-top: 20px;
     padding: 10px 20px;
+    font-size: 20px;
+    font-weight: 600;
+    border-radius: 50px;
+    background-color: greenyellow;
 }
 .vrImage{
     width: 50%;
