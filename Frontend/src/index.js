@@ -7,6 +7,7 @@ import { createBrowserRouter, RouterProvider, Outlet } from 'react-router-dom';
 import Plants from './Component/Plants/Plants';
 import Layout from './Layout';
 import Garden from './Component/Garden/Garden';
+import PlantDet from './Component/PlantDet/PlantDet';
 
 const router = createBrowserRouter([
   {
@@ -20,9 +21,14 @@ const router = createBrowserRouter([
       {
         path: "plants",
         element: <Plants />,
-      },{
+      },
+      {
         path: "garden",
         element: <Garden />,
+      },
+      {
+        path: "plantDet",
+        element: <PlantDet />,
       },
 
       // Add more pages here if needed

@@ -9,13 +9,46 @@ const Home = () => {
       <div className="banner">
         <div className="heading">
           <div className="hedleft">
-            
+            <div className="hlName">
+              <h1>Breath Natureal </h1>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aut
+                maxime non quasi eveniet odio doloremque officia alias iure
+                nesciunt modi?
+              </p>
+              <button className="demo">
+                <i class="fa-solid fa-circle-play"></i>
+                Live demo..
+              </button>
+            </div>
+            <div className="hlVR">
+              <p>
+                Explore Ayurvedic plants in our immersive 3D virtual garden.
+                Learn about the healing properties of herbs while interacting
+                with a peaceful,
+              </p>
+              <button>
+                <i class="fa-solid fa-vr-cardboard"></i>
+              </button>
+            </div>
           </div>
           <div className="hedright">
+            <div className="hr3dView">
+              <img src="./assets/garden.png" alt="" />
+              <button
+              onClick={() => {
+                navigate("/garden");
+              }}
+              >360 View</button>
+            </div>
           </div>
         </div>
+
+
+        <h1 className="homeTrendyPlants">Our Trendy plants</h1>
+        <div className="homeplants"></div>
+        <div className="homeplants"></div>
       </div>
-      
 
       <div className="vrSection">
         <div className="vrInfo">
@@ -83,6 +116,18 @@ const Home = () => {
             <button>More info..</button>
           </div>
         </div>
+      </div>
+
+
+      <div className="homeReview">
+        <h2>Reviews</h2>
+        <div className="homereviewContainer">
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+ 
       </div>
     </div>
   );

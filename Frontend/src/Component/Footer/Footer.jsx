@@ -22,7 +22,6 @@ function Footer() {
           </div>
           <div className='vertical'></div>
 
-
           <div className='footerSocial'>
             <p>SOCIALIZE WITH US</p>
             <div className='sociaMedia'>

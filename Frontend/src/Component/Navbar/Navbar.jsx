@@ -1,12 +1,12 @@
-// src/components/Navbar.js
 import React, { useState } from 'react';
-// import { NavLink, useNavigate } from 'react-router-dom';
 import './Navbar.css';
+import { useNavigate } from "react-router-dom";
+
 
 function Navbar() {
   const [click, setClick] = useState(false);
   const [user, setUser] = useState(null);
-  // const navigate = useNavigate();
+  const navigate = useNavigate();
 
 
 
@@ -34,31 +34,19 @@ function Navbar() {
         </div>
         <div
           className="options"
-          to="type"
-          smooth={true}
-          offset={-70}
-          duration={50}
-          onClick={closeMenu}
+          
         >
           Filter
         </div>
         <div
           className="options"
-          to="rule"
-          smooth={true}
-          offset={-70}
-          duration={50}
-          onClick={closeMenu}
+          
         >
           Notes
         </div>
         <div
           className="options"
-          to="hero"
-          smooth={true}
-          offset={-70}
-          duration={50}
-          onClick={closeMenu}
+          
         >
           Bookmark
         </div>
@@ -68,6 +56,11 @@ function Navbar() {
           <>
             <button className="btn1">
             <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+            <button  onClick={() => {
+                navigate("/plantdet");
+              }}>
+            <i class="fa-solid fa-camera"></i>
             </button>
             <button className="btn1" >
               Login
@@ -82,8 +75,14 @@ function Navbar() {
           </>
         ) : (
           <>
+          
           <button className="btn1">
           <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+            <button  onClick={() => {
+                navigate("/plantdet");
+              }}>
+            <i class="fa-solid fa-camera"></i>
             </button>
             <div className="profilePic">
               <div to="/Dashboard" className="profileLink">
